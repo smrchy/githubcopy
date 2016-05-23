@@ -94,7 +94,7 @@ class Githubcopy
 			GitHubCloner.initSettings( settings )
 			GitHubCloner.run ( err, resp ) ->
 				console.log( "RESULTS:\n" )
-				console.log( "Error:", err? )
+				console.log( "Error:", err )
 				console.log( "Success:", not err, "\n" )
 				return
 			return

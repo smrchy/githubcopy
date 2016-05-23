@@ -13,7 +13,7 @@ Module description
 ## Install
 
 ```
-  npm install githubcopy
+  npm i -g githubcopy
 ```
 
 ## Run on terminal
