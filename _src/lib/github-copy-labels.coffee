@@ -44,7 +44,10 @@ class GitHubCloner
 
 			@targetrepo = @client.repo( @config.gitHubTargetName + "/" + @config.gitTargetRepo )
 
-			next()
+			setTimeout ->
+				next()
+				return
+			, 1500
 			return
 		return
 
@@ -100,7 +103,7 @@ class GitHubCloner
 	@api private
 	###
 	createLabel: ( label ) =>
-		return ( next ) =>
+		return ( next, error ) =>
 			_newLabel = _.pick( label, [ "name", "color" ] )
 			@targetrepo.label _newLabel, ( err, response ) =>
 				@createProgressBar.tick()
