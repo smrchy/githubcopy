@@ -18,8 +18,8 @@ Module description
 
 ## Initialize
 
-```js
-  // TODO init code
+```shell
+  githubcopy
 ```
 
 **Options** 
