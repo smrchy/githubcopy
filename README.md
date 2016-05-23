@@ -16,7 +16,7 @@ Module description
   npm install githubcopy
 ```
 
-## Initialize
+## Run on terminal
 
 ```shell
   githubcopy
