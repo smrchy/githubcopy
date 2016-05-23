@@ -1,0 +1,45 @@
+{
+	"name": "githubcopy",
+	"version": "1.0.0",
+	"description": "Module description",
+	"keywords": [],
+	"homepage": "https://github.com/nachbarshund/githubcopy",
+	"bugs": "https://github.com/nachbarshund/githubcopy/issues",
+	"author": {
+		"name": "nachbarshund",
+		"email": "",
+		"url": "https://github.com/nachbarshund/githubcopy"
+	},
+	"main": "./index.js",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/nachbarshund/githubcopy.git"
+	},
+	"scripts": {
+		"test": "mocha -r should -t 3000 test/main.js"
+	},
+	"engines": {
+		"node": ">= 4.0.0"
+	},
+	"bin": {
+		"githubcopy": "./bin/main.js"
+	},
+	"license": "MIT",
+	"dependencies": {
+		"inquirer": "1.0.x",
+		"github": "0.2.4",
+		"lodash": "4.6.1",
+		"octonode": "0.7.5",
+		"progress": "1.1.x"
+	},
+	"devDependencies": {
+		"should": "8.x",
+		"grunt": "1.x",
+		"grunt-contrib-watch": "1.0",
+		"grunt-contrib-coffee": "1.x",
+		"grunt-contrib-clean": "1.x",
+		"grunt-include-replace": "4.0.x",
+		"grunt-mocha-cli": "2.x",
+		"grunt-newer": "1.x"
+	}
+}
