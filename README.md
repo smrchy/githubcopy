@@ -22,14 +22,10 @@ Module description
   githubcopy
 ```
 
-**Options** 
-
-- **foo** : *( `String` required )* TODO option description
-- **bar** : *( `Number` optional: default = `123` )* TODO option description
-
 ## Todos
 
  * implement test cases to check for correct template generation.
+
 
 ## Testing
 
