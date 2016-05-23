@@ -5,9 +5,19 @@
 # NPM modules
 inquirer = require( "inquirer" )
 ProgressBar = require( "progress" )
+os = require( "os" )
 
 # Internal modules
 GitHubCloner = require( "./github-copy-labels" )
+
+
+try
+	GlobalConfig = require( os.homedir() + "/.globalconfig.json" )
+catch e
+	GlobalConfig =
+		github: 
+			accessToken: ""
+
 
 #
 # ### Exports: *Class*
@@ -34,7 +44,7 @@ class Githubcopy
 			,
 				name: "accessToken"
 				message: "Your GitHub access token?"
-				default: ""
+				default: GlobalConfig.github.accessToken
 			,
 				name: "gitSrcRepo"
 				message: "What's the name of the source repository?"

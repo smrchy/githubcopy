@@ -26,6 +26,16 @@ Module description
 
  * implement test cases to check for correct template generation.
 
+## Advanced tipp
+You can add a global configuration file to set the access token there, e.g. `~/username/.globalconfig.json`:
+
+```
+{
+	"github": {
+		"accessToken": "abcdefghijk12345"
+	}
+}
+```
 
 ## Testing
 
@@ -52,7 +62,8 @@ If you want to be more precice use the mocha cli
 ## Release History
 |Version|Date|Description|
 |:--:|:--:|:--|
-|0.0.1|2016-5-23|Initial commit|
+|1.1.0|2016-5-23|Add global configuration for access token|
+|1.0.0|2016-5-23|Initial commit|
 
 [![NPM](https://nodei.co/npm-dl/githubcopy.png?months=6)](https://nodei.co/npm/githubcopy/)
 
