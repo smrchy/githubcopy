@@ -1,6 +1,6 @@
 {
 	"name": "githubcopy",
-	"version": "1.1.1",
+	"version": "1.1.2",
 	"description": "Module description",
 	"keywords": [],
 	"homepage": "https://github.com/nachbarshund/githubcopy",
@@ -30,7 +30,8 @@
 		"github": "0.2.4",
 		"lodash": "4.6.1",
 		"octonode": "0.7.5",
-		"progress": "1.1.x"
+		"progress": "1.1.x",
+    "async": "2.0.1"
 	},
 	"devDependencies": {
 		"should": "8.x",
